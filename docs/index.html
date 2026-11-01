@@ -1,23 +1,50 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css" />
+    <title>Skills Connect the Dots — Technical Knowledge Base</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <style>
+      :root {
+        --theme-color: #c2410c;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #121110 !important;
+          color: #f2efe8 !important;
+        }
+        .sidebar {
+          background-color: #1a1917 !important;
+          border-right: 1px solid #2f2c28 !important;
+          color: #a8a297 !important;
+        }
+        .markdown-section h1, .markdown-section h2, .markdown-section h3 {
+          color: #f2efe8 !important;
+        }
+        .markdown-section code {
+          background-color: #24221f !important;
+          color: #f2784b !important;
+        }
+        .markdown-section pre {
+          background-color: #0d0c0b !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script>
       window.$docsify = {
-        name: "REPONAME",
-        repo: "USERNAME/REPONAME",
+        name: "Skills Connect",
+        repo: "apravint/skills-connect-the-dots",
         homepage: "index.html",
         loadSidebar: true,
+        auto2top: true,
+        themeColor: "#c2410c",
       };
     </script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   </body>
 </html>
